@@ -1,0 +1,36 @@
+credential:
+  client-id: karyo::agent
+  client-secret: 8ztU9tC8v3B4Jd6J98cvA4EdNLEmS8fREMmxYVJmUGz5hDk42JJ5qKLj9sGZs46
+  orgNo: 1
+  agentNo: 1
+  username: karyo-gclab1
+db:
+  path: config/papsmear_wsi.db
+  schema: config/schema.sql
+log:
+  path: config/agent.log
+goroutine: 12
+svc:
+  url: https://api.doai.co/papsmear/agent
+#  url: http://127.0.0.1:9201/papsmear/agent
+  api-url: https://api.doai.co
+slack:
+  token: xoxb-394172724247-1195317695620-pbupy46nYaRb0oOYyAdJ2gA8
+  channel: prj_papsmear_agent_error_monitoring
+folder: data
+extensions:
+  - .bif
+  - .tif
+  - .svs
+patch:
+  level:
+    - 4
+    - 3
+    - 2
+    - 1
+    - 0
+  size: 8192
+  size_front: 2048
+  # overlap size
+  overlap: 0
+  quality: 70
